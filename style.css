@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+  background: linear-gradient(#3e54ac, #2b3467);
+  display: grid;
+  place-content: center;
+  color: #fff;
+}
+
+input,
+button {
+  display: inline-block;
+  max-width: 279px;
+  border: none;
+  font-size: 50px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+input[type="text"] {
+  height: 80px;
+}
+
+button {
+  height: 40px;
+  font-size: 25px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  width: 100%;
+}
+
+@keyframes load {
+  from {
+    background-color: #4e6e81;
+  }
+
+  to {
+    background-color: #3a98b9;
+  }
+}
+
+button:hover {
+  color: #fff;
+  animation-name: load;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+input[type="text"]:focus {
+  outline: none;
+}
+
+.grid {
+  display: grid;
+  height: 80vh;
+  max-width: 80vw;
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-item {
+  padding: 0 2rem;
+}
+
+.grid-item:nth-child(1) {
+  grid-column: 1 / -1;
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+}
+
+.flex {
+  text-align: center;
+  width: 25vw;
+  flex-direction: column;
+  gap: 1rem;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.result {
+  justify-items: center;
+  display: flex;
+  font-size: 142px;
+  margin: 53 auto 0;
+}
