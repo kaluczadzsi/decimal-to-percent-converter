@@ -91,3 +91,23 @@ input[type="text"]:focus {
   font-size: 142px;
   margin: 53 auto 0;
 }
+
+@media (max-width: 75em) {
+  .grid {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  button {
+    width: 279px;
+  }
+
+  .result {
+    font-size: 100px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+}

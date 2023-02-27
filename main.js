@@ -5,7 +5,7 @@ let decimal;
 button.addEventListener("click", () => {
   decimal = Number(document.querySelector("input").value);
   isDecimal(decimal)
-    ? (percent.innerHTML = `${(decimal * 100).toFixed(2)}%`)
+    ? (percent.innerHTML = `${(decimal * 100).toFixed(1)}%`)
     : (percent.innerHTML = 0);
 });
 
